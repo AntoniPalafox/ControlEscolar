@@ -1,7 +1,15 @@
+using ControlEscolar.Context;
+using ControlEscolar.Contracts;
+using ControlEscolar.Models;
+using ControlEscolar.Repository;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddSingleton<DapperContext>();
+builder.Services.AddScoped<IAlumno, AlumnoRepository>();
 
 var app = builder.Build();
 

@@ -1,0 +1,150 @@
+
+<div class="d-flex justify-content-between align-items-center">
+    <div>
+        <div>
+            <label>SELECCIONE UN PERIODO: </label>
+            <select>
+                <option value="1">SEP-DIC 2022</option>
+                <option value="2">MAY-AGO 2022</option>
+                <option value="3">ENE-ABR 2022</option>
+            </select>
+        </div>
+    </div>
+    <button class="btn btn-primary" onclick="location.href='@Url.Action("RegistrarAspirante", "Alumnos")'">Registrar Aspirante</button>
+</div>
+
+<div>
+    <h1>Aspirantes y alumnos registrados en SEP-DIC 2022</h1>
+</div>
+
+<div class="mt-1">
+    <table id="tabla-alumnos" class="table table-hover">
+        <thead>
+            <tr class="text-center">
+                <th>NOMBRE ALUMNO</th>
+                <th>CARRERA</th>
+                <th>TURNO</th>
+                <th>PAGO INSCRIPCIÓN</th>
+                <th>EDITAR</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="text-center">
+                <td>Antoni Evanov Palafox García</td>
+                <td>ISC</td>
+                <td>Nocturno</td>
+                <td>Si</td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+            <tr class="text-center">
+                <td>Yessica Ríos Rodríguez</td>
+                <td>ISC</td>
+                <td>Nocturno</td>
+                <td>SI</td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+            <tr class="text-center">
+                <td>Rogelio Funes</td>
+                <td>IM</td>
+                <td>Nocturno</td>
+                <td><button type="button" class="btn btn-secondary">NO</button></td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+            <tr class="text-center">
+                <td>Raquel Villanueva</td>
+                <td>II</td>
+                <td>Matutino</td>
+                <td><button type="button" class="btn btn-secondary">NO</button></td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+            <tr class="text-center">
+                <td>Fernanda Gaytán</td>
+                <td>ISC</td>
+                <td>Nocturno</td>
+                <td><button type="button" class="btn btn-secondary">NO</button></td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+            <tr class="text-center">
+                <td>Katia Camacho</td>
+                <td>ISC</td>
+                <td>Nocturno</td>
+                <td>SI</td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+            <tr class="text-center">
+                <td>Erick Rangel</td>
+                <td>II</td>
+                <td>Matutino</td>
+                <td><button type="button" class="btn btn-secondary">NO</button></td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+            <tr class="text-center">
+                <td>Rebeca Beltrán</td>
+                <td>IM</td>
+                <td>Nocturno</td>
+                <td>SI</td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+            <tr class="text-center">
+                <td>Kevin Rodríguez</td>
+                <td>ISC</td>
+                <td>Nocturno</td>
+                <td><button type="button" class="btn btn-secondary">NO</button></td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+            <tr class="text-center">
+                <td>Esmeralda Fuentes</td>
+                <td>IM</td>
+                <td>Matutino</td>
+                <td>SI</td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+            <tr class="text-center">
+                <td>Jahir Ríos</td>
+                <td>II</td>
+                <td>Matutino</td>
+                <td><button type="button" class="btn btn-secondary">NO</button></td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+            <tr class="text-center">
+                <td>ZZZZ</td>
+                <td>IM</td>
+                <td>Nocturno</td>
+                <td><button type="button" class="btn btn-secondary">NO</button></td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+            <tr class="text-center">
+                <td>ZZZZ</td>
+                <td>IM</td>
+                <td>Nocturno</td>
+                <td><button type="button" class="btn btn-secondary">NO</button></td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+            <tr class="text-center">
+                <td>ZZZZ</td>
+                <td>IM</td>
+                <td>Nocturno</td>
+                <td><button type="button" class="btn btn-secondary">NO</button></td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+            <tr class="text-center">
+                <td>ZZZZ</td>
+                <td>IM</td>
+                <td>Nocturno</td>
+                <td><button type="button" class="btn btn-secondary">NO</button></td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+            <tr class="text-center">
+                <td>ZZZZ</td>
+                <td>IM</td>
+                <td>Nocturno</td>
+                <td><button type="button" class="btn btn-secondary">NO</button></td>
+                <td><button type="button" class="btn btn-warning">EDITAR</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+@section Scripts{
+    <script src="~/js/Alumnos/index.js" type="module" asp-append-version="true"></script>
+}

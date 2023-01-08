@@ -1,0 +1,185 @@
+@section Css{
+    <link rel="stylesheet" href="~/css/globales.css" asp-append-version="true">
+    
+}
+<div class="contenedor-formulario">
+
+    <form action="">
+
+        <div class="mb-3">
+            <p>El presente Pre-Registro tiene como objetivo obtener los datos personales de los interesados, así como los datos de carrera y turno de cada uno de ellos, a efecto de determinar la cantidad de grupos que sean posible aperturar, los cuales serán publicados al momento de reunir el mínimo de alumnos necesarios (20), para lo cual serás contactado una vez que dicha cantidad sea reunida.</p>
+            <input type="radio" required>
+            <label for="info">Aceptar</label>
+        </div>
+
+        <div class="mb-3">
+            <p>Aviso de Privacidad: Estoy de acuerdo en que los datos personales que se proporcionen a través del presente formulario y del portal de la Universidad Politécnica de García, sean incorporados a un sistema con el fin de dar atención, trámite y seguimiento a los diversos servicios que se proporcionan en el mismo, y serán exclusivamente tratados por el área competente correspondiente, conforme lo dispuesto en el aviso de privacidad dispuesto en la pagina de internet de la Universidad Politécnica de García, y que podrá ser consultado en <a href="https://www.upgarcia.edu.mx/correo-institucional/aviso-de-privacidad" rel="noopener noreferrer" target="_blank">https://www.upgarcia.edu.mx/correo-institucional/aviso-de-privacidad</a></p>
+            <div class="form-check">
+                <a href="http://" target="_blank" ></a>
+                <input class="form-check-input" type="radio" name="radio-aviso-privacidad" id="radio-aviso-privacidad-1" required>
+                <label class="form-check-label" for="radio-aviso-privacidad-1">
+                    Si
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio-aviso-privacidad" id="radio-aviso-privacidad-2" required>
+                <label class="form-check-label" for="radio-aviso-privacidad-2">
+                    No
+                </label>
+            </div>
+        </div>
+
+
+        <div class="form-floating mb-3">
+            <select class="form-select pb-0" aria-label="Selecciona una carrera">
+                <option selected disabled>-- SELECCIONE UNA OPCIÓN--</option>
+                <option value="1">Ingeniería Industrial</option>
+                <option value="2">Ingeniería en Sistemas Computacionales</option>
+                <option value="3">Ingeniería en Mecatrónica</option>
+            </select>
+            <label for="">Selecciona tu carrera de interés</label>
+        </div>
+        
+        <div class="form-floating mb-3">
+            <select class="form-select pb-0" aria-label="Selecciona un turno">
+                <option selected disabled>-- SELECCIONE UNA OPCIÓN--</option>
+                <option value="1">Matutino (8:00am a 1:50pm)</option>
+                <option value="2">Nocturno (4:20pm a 10:10pm)</option>
+            </select>
+            <label for="">Selecciona un turno</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+            <label for="Nombre">Nombre</label>
+        </div>
+
+        <div class="row g-2">
+            <div class="col-md">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="Paterno" placeholder="Apellido Paterno">
+                    <label for="Paterno"> Apellido Paterno</label>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="Materno" placeholder="Apellido Materno">
+                    <label for="Materno">Apellido Materno</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-2">
+            <div class="col-md">
+                <div class="form-floating mb-3">
+                    <select class="form-select pb-0" aria-label="Género">
+                        <option selected disabled>-- SELECCIONE UNA OPCIÓN--</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Femenino</option>
+                    </select>
+                    <label for="">Selecciona tu género</label>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="form-floating mb-3">
+                    <input class="form-control" type="date" name="Fecha_Nacimiento">
+                    <label for="">Fecha de nacimiento</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-floating mb-3">
+            <select class="form-select pb-0" aria-label="Servicio médico">
+                <option selected disabled>-- SELECCIONE UNA OPCIÓN--</option>
+                <option value="1">IMSS</option>
+                <option value="2">ISSSTE</option>
+                <option value="3">ISSSTELEON</option>
+                <option value="4">NO TENGO</option>
+            </select>
+            <label for="">¿Cuentas con servicio médico? ¿Qué tipo?</label>
+        </div>
+
+        <p>La Universidad Politécnica de García, proporciona IMSS a todos sus estudiantes, es importante que agregues correctamente tu NSS ( del Alumno), todos tenemos un número.<span> En caso que no tengas es necesario tramitarlo en <a href="http://www.imss.gob.mx/tramites/imss02008" target="_blank" rel="noopener noreferrer"> http://www.imss.gob.mx/tramites/imss02008 </a></span></p>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="NSS" placeholder="Imss">
+            <label for="NSS"> Número de seguridad social del IMSS</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="CURP" placeholder="Curp">
+            <label for="CURP">CURP</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="RFC" placeholder="RFC">
+            <label for="RFC">RFC</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <select class="form-select pb-0" aria-label="Entidad Nacimiento">
+                <option selected disabled>-- SELECCIONE UNA OPCIÓN--</option>
+                <option value="1">Nuevo León</option>
+                <option value="2">Otra</option>
+            </select>
+            <label for="">Entidad de Nacimiento</label>
+        </div>
+
+        <h3>Domicilio actual</h3>
+        <div class="row g-2">
+            <div class="col-md">
+                <div class="form-floating mb-3">
+                    <select class="form-select pb-0" aria-label="Estado">
+                        <option selected>Nuevo León</option>
+                        
+                    </select>
+                    <label for="">Estado</label>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="form-floating mb-3">
+                    <select class="form-select pb-0" aria-label="Municipio">
+                        <option selected disabled>-- SELECCIONE UNA OPCIÓN--</option>
+                        <option value="1">García</option>
+                        <option value="2">Monterrey</option>
+                        <option value="2">Santa Catarina</option>
+                        <option value="2">Escobedo</option>
+                        <option value="2">San Nicolás</option>
+                    </select>
+                    <label for="">Municipio</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="Colonia" placeholder="Colonia">
+            <label for="Colonia">Colonia</label>
+        </div>
+
+        <div class="row g-2">
+            <div class="col-md">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="Calle" placeholder="Calle">
+                    <label for="Calle">Calle</label>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="NumeroExterior" placeholder="NumeroExterior">
+                    <label for="NumeroExterior">Número Exterior</label>
+                </div>
+            </div>
+        </div>
+
+        <h3>Escuela de Procedencia</h3>
+        <div class="form-floating mb-3">
+            <select class="form-select pb-0" aria-label="EscuelaProcedencia">
+                <option selected disabled>-- SELECCIONE UNA OPCIÓN--</option>
+                <option value="1">19ETC0002C -COLEGIO DE ESTUDIOS CIENTIFICOS Y TECNOLOGICOS UNIDAD GARCIA</option>
+                <option value="2">19UBH0066K -PREPARATORIA NUM. 19 U.A.N.L.</option>
+            </select>
+            <label for="">Escuela de procedencia</label>
+        </div>
+        
+    </form>
+
+</div>

@@ -1,0 +1,14 @@
+:root{
+    --color-verde-primario: #4f7517;
+    --color-verde-secundario: #3e5b12;
+}
+
+.contenedor-formulario{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgba(235, 235, 235, 0.575);
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    max-width: 50%;
+}
